@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="blur-2.0.0-beta4">
+    <CLASSES>
+      <root url="jar://G:/AndroidAVD/.android/build-cache/1077b3bdefe4462fa28878e9f5a9df1a8046a44c/output/jars/classes.jar!/" />
+      <root url="file://G:/AndroidAVD/.android/build-cache/1077b3bdefe4462fa28878e9f5a9df1a8046a44c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.qiujuer.genius/blur/2.0.0-beta4/ef7ef891176eb3f8b6a5bdfbfbcf5eb73dc81796/blur-2.0.0-beta4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
