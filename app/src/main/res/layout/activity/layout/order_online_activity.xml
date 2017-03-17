@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zwt.yiyoupatient.activity.OrderOnlineActivity">
+
+    <include layout="@layout/toolbar_back"
+        android:id="@+id/include3" />
+
+    <com.zwt.yiyoupatient.expandtab.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include3"/>
+
+    <ListView
+        android:id="@+id/orderlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandtab_view">
+
+    </ListView>
+</RelativeLayout>

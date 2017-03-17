@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.zwt.yiyoupatient.Base.BaseFragment;
 import com.zwt.yiyoupatient.R;
 import com.zwt.yiyoupatient.activity.HomeActivity;
+import com.zwt.yiyoupatient.activity.OrderOnlineActivity;
 import com.zwt.yiyoupatient.activity.TextActivity;
 import com.zwt.yiyoupatient.adapter.HFTextAdapter;
 import com.zwt.yiyoupatient.model.HFText;
@@ -177,7 +178,7 @@ public class HomeFragment extends BaseFragment{
         linearLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                getHoldingActivity().openActivity(OrderOnlineActivity.class);
             }
         });
         linearLayout2.setOnClickListener(new View.OnClickListener() {

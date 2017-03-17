@@ -17,6 +17,7 @@ android {
         main {
             res.srcDirs =
                     [
+                            'src/main/res/layout/expandtab',
                             'src/main/res/layout/head',
                             'src/main/res/layout/item',
                             'src/main/res/layout/fragment',
