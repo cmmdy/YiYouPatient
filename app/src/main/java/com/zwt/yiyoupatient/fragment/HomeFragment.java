@@ -15,6 +15,7 @@ import android.widget.ListView;
 import com.bumptech.glide.Glide;
 import com.zwt.yiyoupatient.Base.BaseFragment;
 import com.zwt.yiyoupatient.R;
+import com.zwt.yiyoupatient.activity.ExpertIntroduction;
 import com.zwt.yiyoupatient.activity.HomeActivity;
 import com.zwt.yiyoupatient.activity.OrderOnlineActivity;
 import com.zwt.yiyoupatient.activity.TextActivity;
@@ -184,7 +185,7 @@ public class HomeFragment extends BaseFragment{
         linearLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                getHoldingActivity().openActivity(ExpertIntroduction.class);
             }
         });
         linearLayout3.setOnClickListener(new View.OnClickListener() {

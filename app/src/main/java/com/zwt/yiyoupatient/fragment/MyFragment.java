@@ -13,9 +13,11 @@ import com.bumptech.glide.Glide;
 import com.zwt.yiyoupatient.Base.BaseFragment;
 import com.zwt.yiyoupatient.R;
 import com.zwt.yiyoupatient.activity.CollectionActivity;
+import com.zwt.yiyoupatient.activity.HealthHelpActiyivty;
 import com.zwt.yiyoupatient.activity.HomeActivity;
 import com.zwt.yiyoupatient.activity.MailList;
 import com.zwt.yiyoupatient.activity.MyMessageActivity;
+import com.zwt.yiyoupatient.activity.RecordActivity;
 import com.zwt.yiyoupatient.adapter.MyAdapter;
 import com.zwt.yiyoupatient.model.MyMessage;
 
@@ -100,8 +102,10 @@ public class MyFragment extends BaseFragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (mmList.get(i - 1).getText()) {
                     case "健康助手":
+                        getHoldingActivity().openActivity(HealthHelpActiyivty.class);
                         break;
                     case "门诊记录":
+                        getHoldingActivity().openActivity(RecordActivity.class);
                         break;
                     case "我的收藏":
                         getHoldingActivity().openActivity(CollectionActivity.class);

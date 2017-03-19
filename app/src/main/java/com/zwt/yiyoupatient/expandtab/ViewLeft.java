@@ -94,9 +94,7 @@ public class ViewLeft extends LinearLayout implements ViewBaseAction, AdapterVie
         InputStream in = null;
         ByteArrayOutputStream out = null;
         try {
-            OrderOnlineActivity orderOnlineActivity = (OrderOnlineActivity) mContext;
-            System.out.println(orderOnlineActivity);
-            in = orderOnlineActivity.getAssets().open("PCA.json");
+            in = mContext.getAssets().open("PCA.json");
             out = new ByteArrayOutputStream();
             byte[] b = new byte[1024];
             int length = -1;

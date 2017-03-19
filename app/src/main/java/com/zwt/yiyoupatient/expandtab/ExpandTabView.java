@@ -3,6 +3,7 @@ package com.zwt.yiyoupatient.expandtab;
 import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -100,6 +101,8 @@ public class ExpandTabView extends LinearLayout implements OnDismissListener {
             mToggleButton.add(tButton);
             tButton.setTag(i);
             tButton.setText(mTextArray.get(i));
+            tButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+            tButton.setTextColor(mContext.getResources().getColor(R.color.colorBlack1));
 
             r.setOnClickListener(new OnClickListener() {
                 @Override

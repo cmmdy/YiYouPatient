@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zwt.yiyoupatient.activity.HealthHelpActiyivty">
+
+    <include layout="@layout/toolbar_back"
+        android:id="@+id/include9"/>
+
+    <LinearLayout
+        android:layout_below="@+id/include9"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#45d6d6d6"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/eat"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/first">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="吃药提醒"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/to" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/eat"
+        android:layout_height="10dp"
+        android:background="#45d6d6d6"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/heart"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/second">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="心率监测"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/to" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/heart"
+        android:layout_height="10dp"
+        android:background="#45d6d6d6"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/third">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="运动步数"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/to" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fouth"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/foot"
+        android:layout_height="1dp"
+        android:background="#458b8b8b"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/fouth">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="运动距离"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/to" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifth"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/distance"
+        android:layout_height="1dp"
+        android:background="#458b8b8b"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/climb"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/fifth">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:text="已爬楼层"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/to" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixth"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/climb"
+        android:layout_height="1dp"
+        android:background="#458b8b8b"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal" />
+</RelativeLayout>
