@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 
 
 import com.zwt.yiyoupatient.R;
+import com.zwt.yiyoupatient.activity.HomeActivity;
 
 import java.util.Stack;
 
@@ -28,6 +30,8 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
+    private static final String token1 = "l506w8KxEYcMLgogf7e5Jzdw425PLr6tFkyLhkSfXOmlDCw9tNfLfbhLHqMX7C5v8qzlbK2hRm/X8vvJcZu2qw==";
+    private static final String token2 = "nd31ans4bJoXR8DxHtR73mauLsGGvadstSYMGqtTBsDnY5b4vWFE5zaFJIUd9JmoIZwaVteTWP4HiEMu5XN7IQ==";
     /**
      * 用来保存所有已打开的Activity
      */
@@ -56,6 +60,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //连接Rong_Cloud
         // 设置activity为无标题栏
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         // 将activity推入栈中
@@ -334,4 +339,5 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     /***********************************************************************/
+
 }

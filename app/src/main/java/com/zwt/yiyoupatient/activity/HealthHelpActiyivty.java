@@ -60,6 +60,7 @@ public class HealthHelpActiyivty extends BaseActivity {
                 finish();
                 break;
             case R.id.eat:
+                openActivity(EatActivity.class);
                 break;
             case R.id.heart:
                 break;

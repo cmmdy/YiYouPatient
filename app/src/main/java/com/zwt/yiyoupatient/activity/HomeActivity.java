@@ -3,9 +3,11 @@ package com.zwt.yiyoupatient.activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
@@ -40,9 +42,11 @@ public class HomeActivity extends BaseActivity {
     private Fragment fragment2 = new TouchFragment();
     private Fragment fragment3 = new MyFragment();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         gethw = new getHW(this);
 
         new Thread(new Runnable() {
@@ -67,7 +71,9 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+
     }
+
 
     @Override
     protected void initListener() {
