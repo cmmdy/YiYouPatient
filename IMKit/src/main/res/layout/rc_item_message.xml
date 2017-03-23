@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rc_layout_item_message"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
 
     <TextView
         android:id="@id/rc_time"
-        style="@style/RCTheme.Notification"
+        style="@style/RCTheme.MessageTime"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="6dp" />
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
 
     <io.rong.imkit.widget.AsyncImageView
         android:id="@id/rc_left"
@@ -44,12 +50,15 @@
         style="@style/RCTheme.Message.Username.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:layout_below="@id/rc_time"
-        android:layout_marginTop="-3dp"
         android:layout_toLeftOf="@id/rc_right"
         android:layout_toRightOf="@id/rc_left"
+        android:ellipsize="end"
         android:gravity="center_vertical"
-        android:visibility="gone" />
+        android:maxEms="14"
+        android:singleLine="true"
+        android:visibility="gone"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -67,30 +76,30 @@
 
             <TextView
                 android:id="@id/rc_sent_status"
-                android:layout_gravity="center_vertical"
-                android:textColor="@color/rc_notification_bg"
-                android:textSize="12sp"
-                android:visibility="gone"
-                android:text="已发"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp" />
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="已发"
+                android:textColor="@color/rc_notification_bg"
+                android:textSize="12sp"
+                android:visibility="gone" />
 
             <ProgressBar
                 android:id="@id/rc_progress"
+                style="?android:attr/progressBarStyle"
                 android:layout_width="13dp"
                 android:layout_height="13dp"
-                android:indeterminateDrawable="@drawable/rc_progress_sending_style"
+                android:layout_gravity="center_vertical"
                 android:layout_marginRight="11dp"
-                style="?android:attr/progressBarStyle"
-                android:layout_gravity="center_vertical" />
+                android:indeterminateDrawable="@drawable/rc_progress_sending_style" />
 
             <ImageView
                 android:id="@id/rc_warning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="11dp"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/rc_ic_warning"
                 android:visibility="gone" />
 
@@ -101,6 +110,27 @@
                 android:layout_gravity="bottom"
                 android:layout_marginRight="4dp"
                 android:src="@drawable/rc_read_receipt"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/rc_read_receipt_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/rc_read_receipt_request_button"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/rc_read_receipt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="11dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/rc_read_receipt_status"
+                android:textColor="@color/rc_read_receipt_status"
+                android:textSize="12sp"
                 android:visibility="gone" />
 
             <io.rong.imkit.widget.ProviderContainerView
